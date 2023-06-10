@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-    background-color:rgb(136, 38, 71);
+    background: linear-gradient(to bottom right, black, rgb(2, 2, 48));
     
 }
-@media screen and (min-width:968px) {
-    
-}
+
 .profile{
     position: relative;
     padding-top:3.5rem;
@@ -53,9 +51,14 @@ body{
     font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: 4px;
+    color: whitesmoke;
   }
   .profile_name{
     font-weight: 800;
+    color: whitesmoke;
+  }
+  .profile_info_description{
+    color: whitesmoke;
   }
   .profile_social_hundles{
     display: flex;
@@ -107,7 +110,6 @@ body{
 }
 .filters_content{
     margin:2rem 0 2.5 rem;
-    background-color: #333;
     padding: .375rem;
     display: flex;
     justify-content: space-between;
@@ -121,11 +123,51 @@ body{
     font-size: medium;
     border-radius: .75rem;
     cursor: pointer;
-    background-color: transparent;
+    background-color: darkgray;
     transition: .3s;
 }
 .filters_button:hover{
-    background-color: darkgray;
+    background-color: gainsboro;
 }
+.projects_card{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.projects_card img{
+    width: 100%;
+    height: 100%;
+}
+.projects_modal{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    bottom: -100%;
+    left:0;
+    display:grid;
+    align-items: flex-end;
+    background: linear-gradient(to right, rgba(9, 86, 107, 0.429), rgb(3, 1, 38));
+
+    padding: 1.5rem 1.25rem;
+    transition:3s;
+}
+.projects_subtitle,
+.projects_title{
+    color: #fff;
+}
+.projects_subtitle{
+    font-size: small;
+}
+.projects_title{
+    margin-bottom: .75rem;
+}
+.projects_button{
+    padding: .5rem;
+}
+.projects_card:hover .projects_modal {
+    bottom:0;
+}
+
+
 
 
