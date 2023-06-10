@@ -5,33 +5,50 @@ body{
 @media screen and (min-width:968px) {
     
 }
+.profile{
+    position: relative;
+    padding-top:3.5rem;
+}
 .profile-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    row-gap:2rem ;
+    /* justify-content: center;
+    align-items: center; */
     height: 100vh;
   }
-  
-  .profile_grid {
+  .profile_data{
     display: grid;
-    grid-template-columns: auto 1fr; 
-    gap: 20px; 
-  }
-  
-  .profile_data {
-    text-align: center; 
-  }
-  
-  .prof_info_about {
     text-align: center;
   }
   .profile_border{
-    border: 3.5px solid black;
+    border: 3.5px solid goldenrod;
     justify-self: center;
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 80%;
     display: grid;
     place-items: center;
+    margin-bottom: .75rem;
+  }
+  .prof_pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(hsl(0, 100%, 18%));
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .prof_pic img{
+   width: 75px; 
+  }
+  .profile_special{
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 1rem;
+  }
+  .profile_name{
+    color: gray;
   }
   
