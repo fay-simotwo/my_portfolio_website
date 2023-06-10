@@ -74,8 +74,6 @@ body{
     color: black;
 
   }
-.profile_info_description{
-}
 .profile-info{
     grid-template-columns: repeat(3, max-content);
     justify-content:center;
@@ -106,4 +104,12 @@ button{
 .filters_container {
     margin-top: -350px;
     margin-right: 1200px;
+}
+.filters_content{
+    margin:2rem 0 2.5 rem;
+    background-color: #333;
+    padding: .375rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: .5rem;
 }
