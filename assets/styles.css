@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
+    background-color:rgb(4, 4, 36);
+    display: flex;
+    justify-content: center;
 }
 @media screen and (min-width:968px) {
     
@@ -21,7 +24,7 @@ body{
     text-align: center;
   }
   .profile_border{
-    border: 3.5px solid goldenrod;
+    border: 3.5px solid wheat;
     justify-self: center;
     width: 120px;
     height: 120px;
@@ -44,11 +47,59 @@ body{
    width: 75px; 
   }
   .profile_special{
-    font-weight: 400;
+    font-weight: 600;
     color: gray;
     margin-bottom: 1rem;
+    letter-spacing: 4px;
   }
   .profile_name{
     color: gray;
+    font-weight: 800;
   }
-  
+  .profile_social_hundles{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    align-items: center;
+    width: 600px;
+    
+  }
+  .profile_social_hundles link{
+    font-size: 1.25rem;
+    color: black;
+    transition: .3s;
+  }
+  .profile_social_hundles, link:hover{
+    color: black;
+
+  }
+.profile_info_description{
+    color: gray;
+}
+.profile-info{
+    grid-template-columns: repeat(3, max-content);
+    justify-content:center;
+    column-gap: 2.5rem;
+}
+.profile_info_description{
+    text-align: center;
+}
+.github-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: medium;
+    
+}
+button{
+    margin-left: 240px;
+    width: 200px;
+    height: 50px;
+
+}
