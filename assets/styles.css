@@ -208,3 +208,9 @@ body{
 .filters_active[data-content]{
     display: grid;
 }
+.footer_copy{
+    display: block;
+    margin: 2.5rem 0 2rem;
+    text-align: center;
+    color: whitesmoke;
+}
