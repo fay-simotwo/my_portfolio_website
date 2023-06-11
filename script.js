@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const filters = document.querySelectorAll('.filters_button');
     const contentSections = document.querySelectorAll('[data-content]');
   
     filters.forEach((filter) => {
-      filter.addEventListener('click', function () {
+      filter.addEventListener('click', function() {
         const target = this.getAttribute('data-target');
   
         // Hide all content sections
@@ -19,4 +19,3 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-  
