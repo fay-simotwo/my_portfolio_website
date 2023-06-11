@@ -107,6 +107,8 @@ body{
 .filters_container {
     margin-top: -350px;
     margin-right: 1200px;
+    
+   
 }
 .filters_content{
     margin:2rem 0 2.5 rem;
@@ -149,7 +151,16 @@ body{
     background: linear-gradient(to right, rgba(9, 86, 107, 0.429), rgb(3, 1, 38));
 
     padding: 1.5rem 1.25rem;
-    transition:3s;
+    transition:.3s;
+}
+/* .projects_content_grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.projects_button{
+    font-size: 2rem; 
+    color: gray;
 }
 .projects_subtitle,
 .projects_title{
@@ -202,11 +213,14 @@ body{
 .skills_level{
     color: rgb(132, 95, 107);
 }
-.filterss[data-content]{
+.filters_section[data-content]{
     display: none;
 }
-.filters_active[data-content]{
+.filters_section[data-content].active{
     display: grid;
+}
+.filters_content{
+    display: flex;
 }
 .footer_copy{
     display: block;
@@ -226,3 +240,21 @@ body{
 ::-webkit-scrollbar-thumb:hover{
     background-color: lightgoldenrodyellow;
 }
+.change_theme{
+    position: absolute;
+    top:1.5rem;
+    right: 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: .3s;
+}
+
+.filters_active {
+    display: grid;
+  }
+  
+  .filters_section:not(.filters_active) {
+    display: none;
+  }
+  
