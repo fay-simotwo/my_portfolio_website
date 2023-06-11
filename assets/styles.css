@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, black, rgb(2, 2, 48));
+    background: linear-gradient(to bottom right, black, rgb(34, 34, 46));
 
 }
 
@@ -15,7 +15,7 @@ body{
     /* justify-content: center;
     align-items: center; */
     height: 100vh;
-    margin-left: 600px;
+    
   }
   .profile_data{
     display: grid;
@@ -106,12 +106,13 @@ body{
     margin-left: 230px;
     width: 200px;
     height: 50px;
-    margin-left: 350px;
+    margin-left: 325px;
     
 }
 .filters_container {
     margin-top: -250px;
-    margin-right: -10px;
+    margin-right:200px;
+    margin-left: 250px;
    
 }
 .filters_content{
@@ -120,6 +121,7 @@ body{
     display: flex;
     justify-content: space-between;
     column-gap: .5rem;
+    width: 400px;
 }
 .filters_button{
     width: 100%;
@@ -187,6 +189,9 @@ body{
 }
 .projects_card:hover .projects_modal {
     bottom:0;
+}
+.skills_area{
+    font-size: 40px;
 }
 .skills_title{
     color: whitesmoke;
@@ -296,6 +301,7 @@ body{
     
     .projects_card {
       margin-bottom: 2rem;
+      margin: 20px;
     }
     
     .skills_box {
