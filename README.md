@@ -31,7 +31,7 @@ JavaScript
 ```
 
 ### Link to live site
-
+https://fay-simotwo.github.io/my_portfolio_website/
 
 ### Project Design
 ![Screenshot from 2023-06-12 22-48-54](https://github.com/fay-simotwo/my_portfolio_website/assets/117070967/860f0557-9c88-402b-b8a2-cc5f46617421)
