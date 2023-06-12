@@ -19,3 +19,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+ document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    // Fetch form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    // Perform form validation or additional processing as needed
+    
+    // Display a success message
+    alert(`Thank you, ${name}! Your message has been submitted.`);
+    
+    // Clear the form inputs
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+  });
+
