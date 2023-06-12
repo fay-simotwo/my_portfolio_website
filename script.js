@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
- document.getElementById('contact-form').addEventListener('submit', function (e) {
+   document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     
     // Fetch form data
@@ -37,4 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
   });
+  // Get the projects container and projects cards
+const projectsContainer = document.querySelector(".projects_content_grid");
+const projectsCards = document.querySelectorAll(".projects_card");
+
+// Function to toggle the projects display
+function toggleProjects() {
+  // Toggle the "open" class on the projects container
+  projectsContainer.classList.toggle("open");
+
+  // Toggle the "open" class on each projects card
+  projectsCards.forEach(card => card.classList.toggle("open"));
+}
+
+// Add a click event listener to the projects button
+const projectsButton = document.querySelector(".projects_button");
+projectsButton.addEventListener("click", toggleProjects);
+
 
